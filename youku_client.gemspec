@@ -7,9 +7,9 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'rake'
   gem.add_development_dependency 'rspec'
   gem.add_development_dependency 'webmock'
-  gem.authors = ['Alexey Vokhmin']
+  gem.authors = ['Alexey Vokhmin', 'Dave Perrett', 'Oleg Dashevskii']
   gem.description = %q{A Ruby wrapper for the Youku v2 API}
-  gem.email = ['avokhmin@gmail.com']
+  gem.email = ['avokhmin@gmail.com', 'dave@recurser.com', 'be9@be9.ru']
   gem.executables = `git ls-files -- bin/*`.split("\n").map{|f| File.basename(f)}
   gem.files = `git ls-files`.split("\n")
   gem.homepage = "https://github.com/Shuttlerock/youku_client"
