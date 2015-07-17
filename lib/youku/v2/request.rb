@@ -1,3 +1,5 @@
+require 'typhoeus'
+
 module Youku
   module V2
     class Request
