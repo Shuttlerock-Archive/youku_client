@@ -1,5 +1,7 @@
 # Youku Ruby Gem
 
+[![Build Status](https://secure.travis-ci.org/Shuttlerock/youku_client.png)](http://travis-ci.org/Shuttlerock/youku_client)
+
 This is the unofficial Ruby wrapper for the Youku v2 API. It supports not all
 endpoints currently available on the
 [Youku API](http://open.youku.com/docs?id=0).
@@ -33,7 +35,7 @@ please if you would like to contribute, let me know and throw me a pull request!
 
 ### Requirements
 
-* Ruby 1.9.x or 2.x.x
+* Ruby 2.x.x
 
 ---
 

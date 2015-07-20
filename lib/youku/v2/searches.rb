@@ -34,7 +34,6 @@ module Youku
           }
         end
       end
-
     end
   end
 end
