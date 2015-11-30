@@ -1,4 +1,6 @@
+require 'hashie'
 require 'typhoeus'
+require 'multi_json'
 
 module Youku
   module V2
