@@ -34,6 +34,12 @@ module Youku
       Youku::V2::Users.new(self)
     end
 
+    # Public: Get users API.
+    #
+    # Returns the instance of Youku::V2::Users.
+    def comments
+      Youku::V2::Comments.new(self)
+    end
   end
 end
 
@@ -41,3 +47,4 @@ require 'youku/v2/base'
 require 'youku/v2/searches'
 require 'youku/v2/users'
 require 'youku/v2/videos'
+require 'youku/v2/comments'
