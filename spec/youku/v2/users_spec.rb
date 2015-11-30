@@ -9,7 +9,7 @@ describe Youku::V2::Users do
     let(:url)   { 'https://openapi.youku.com/v2/users/show_batch.json' }
     let(:query) { {
       client_id: client.client_id,
-      user_ids:  nil,
+      user_ids:  '',
       user_names: 'jackie_chan',
     } }
 

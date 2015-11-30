@@ -10,7 +10,7 @@ describe Youku::V2::Videos do
     let(:query) { {
       client_id: client.client_id,
       video_ids: 123,
-      ext:       nil,
+      ext:       '',
     } }
 
     before do
@@ -27,7 +27,7 @@ describe Youku::V2::Videos do
     let(:query) { {
       client_id: client.client_id,
       video_id: 123,
-      ext:      nil,
+      ext:      '',
     } }
 
     before do
@@ -44,7 +44,7 @@ describe Youku::V2::Videos do
     let(:query) { {
       client_id: client.client_id,
       user_id:   123,
-      user_name: nil,
+      user_name: '',
       orderby:   'published',
       page:      1,
       count:     20
