@@ -15,10 +15,25 @@ module Youku
         Youku::V2::Request.new "#{BASE_URI}/show_batch.json", {
           client_id:  client.client_id,
           user_ids:   user_ids,
-          user_names: user_names
+          user_names: user_names,
         }
       end
 
+      # Public: Get user by ID
+      #
+      # See: http://open.youku.com/docs?id=24
+      #
+      # user_id   - The string of a youku user ID
+      # user_name - The string of a youku user name.
+      #
+      # Returns the instance of Youku::V2::Request.
+      def show(user_id: nil, user_name: nil)
+        Youku::V2::Request.new "#{BASE_URI}/show.json", {
+          client_id: client.client_id,
+          user_id:   user_id,
+          user_name: user_name,
+        }
+      end
     end
   end
 end
