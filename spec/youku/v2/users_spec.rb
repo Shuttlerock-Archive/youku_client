@@ -8,8 +8,8 @@ describe Youku::V2::Users do
   describe '#show_batch' do
     let(:url)   { 'https://openapi.youku.com/v2/users/show_batch.json' }
     let(:query) { {
-      client_id: client.client_id,
-      user_ids:  '',
+      client_id:  client.client_id,
+      user_ids:   '',
       user_names: 'jackie_chan',
     } }
 
@@ -22,4 +22,20 @@ describe Youku::V2::Users do
     it_should_behave_like 'a base Youku API V2 requests'
   end
 
+  describe '#show' do
+    let(:url)   { 'https://openapi.youku.com/v2/users/show.json' }
+    let(:query) { {
+      client_id: client.client_id,
+      user_id:   '',
+      user_name: 'jackie_chan',
+    } }
+
+    before do
+      stub_request(:get, url).with(query: query).to_return(status: 200)
+    end
+
+    subject { users.show(user_name: 'jackie_chan') }
+
+    it_should_behave_like 'a base Youku API V2 requests'
+  end
 end
