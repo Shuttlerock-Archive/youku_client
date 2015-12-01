@@ -22,11 +22,23 @@ Get users by IDs:
 
 Implemented API endpoints:
 
+  - `comments.by_video`
+  - `comments.hot.by_video`
+  - `comments.show_batch`
+  - `comments.show`
   - `searches.video.by_keyword`
+  - `users.friendship.followers`
+  - `users.friendship.followings`
   - `users.show_batch`
-  - `videos.video.by_user`
-  - `videos.video.show_batch`
-  - `videos.video.show`
+  - `users.show`
+  - `videos.by_category`
+  - `videos.by_related`
+  - `videos.by_user`
+  - `videos.favorite.by_user`
+  - `videos.show_basic_batch`
+  - `videos.show_basic`
+  - `videos.show_batch`
+  - `videos.show`
 
 ### Contributions and Pull Requests
 
