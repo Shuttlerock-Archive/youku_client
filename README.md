@@ -33,6 +33,7 @@ Implemented API endpoints:
 - `comments.show_batch`
 - `comments.hot.by_video`
 - `searches.video.by_keyword`
+- `searches.video.by_tag`
 - `users.show_batch`
 - `users.show`
 - `users.friendship.followers`

@@ -1,4 +1,4 @@
-Unreleased
+0.0.4
 ----------
 * [Implemented schemas.video.category](https://github.com/Shuttlerock/youku_client/pull/8) ([@BenjaminSchaaf](https://github.com/BenjaminSchaaf))
 * [Implemented searches.video.by_tag](https://github.com/Shuttlerock/youku_client/pull/9) ([@BenjaminSchaaf](https://github.com/BenjaminSchaaf))

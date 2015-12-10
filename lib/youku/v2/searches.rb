@@ -20,7 +20,7 @@ module Youku
         # category  - The String category.
         # period    - The String period.
         # orderby   - The String order of videos.
-        # userid    - The string of a youku user ID
+        # userid    - The String or Integer of a youku user ID.
         # page      - The Integer page number.
         # count     - The Integer page size.
         #
