@@ -3,9 +3,9 @@ module Youku
     class Schemas < Base
       BASE_URI = "#{BASE_URI}/schemas"
 
-      # Public: Get hot API.
+      # Public: Get video API.
       #
-      # Returns the instance of Youku::V2::Comments::Video.
+      # Returns the instance of Youku::V2::Schemas::Video.
       def video
         Video.new(client)
       end
@@ -13,13 +13,9 @@ module Youku
       class Video < Base
         BASE_URI = "#{BASE_URI}/video"
 
-        # Public: Get hot comments given a video.
+        # Public: Get video categories.
         #
-        # See: http://open.youku.com/docs?id=36
-        #
-        # video_id - The string video ID.
-        # page     - The Integer page number.
-        # count    - The Integer page size.
+        # See: http://open.youku.com/docs?id=90
         #
         # Returns the instance of Youku::V2::Request.
         def category()
