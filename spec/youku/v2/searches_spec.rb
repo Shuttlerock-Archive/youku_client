@@ -43,6 +43,7 @@ describe Youku::V2::Searches do
         category: '',
         period:   'today',
         orderby:  'relevance',
+        userid:   '',
         page:     1,
         count:    20
       } }
