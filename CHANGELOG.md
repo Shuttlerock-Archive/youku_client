@@ -1,3 +1,7 @@
+Unreleased
+----------
+* [Implemented schemas.video.category](https://github.com/Shuttlerock/youku_client/pull/8) ([@BenjaminSchaaf](https://github.com/BenjaminSchaaf))
+
 0.0.3
 ------
 * [Completed non-authenticated portion of the comments API](https://github.com/Shuttlerock/youku_client/pull/7) ([@BenjaminSchaaf](https://github.com/BenjaminSchaaf))
