@@ -11,7 +11,7 @@ module Youku
       #
       # url    - The String url.
       # params - The Hash query params.
-      def initialize(url, params)
+      def initialize(url, params = {})
         @url      = url
         @params   = params
         @response = Typhoeus::Request.new(url, params: params, connecttimeout: 5, timeout: 10).run

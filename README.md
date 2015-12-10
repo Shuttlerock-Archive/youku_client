@@ -1,49 +1,56 @@
 # Youku Ruby Gem
 
-[![Build Status](https://secure.travis-ci.org/Shuttlerock/youku_client.png)](http://travis-ci.org/Shuttlerock/youku_client) [![Code Climate](https://codeclimate.com/github/Shuttlerock/youku_client/badges/gpa.svg)](https://codeclimate.com/github/Shuttlerock/youku_client)
+[![Build Status](https://secure.travis-ci.org/Shuttlerock/youku_client.png)](http://travis-ci.org/Shuttlerock/youku_client)
+[![Code Climate](https://codeclimate.com/github/Shuttlerock/youku_client/badges/gpa.svg)](https://codeclimate.com/github/Shuttlerock/youku_client)
 
 This is the unofficial Ruby wrapper for the Youku v2 API. It supports not all
-endpoints currently available on the
-[Youku API](http://open.youku.com/docs?id=0).
+endpoints currently available on the [Youku API](http://open.youku.com/docs?id=0).
 
 ## Installation
 
-    gem install youku_client
+``` bash
+gem install youku_client
+```
 
 ### Some quick examples
 
 First, instantiate the Client class:
 
-    >> client = Youku.new(client_id: 'id', client_secret: 'secret')
+``` ruby
+>> client = Youku.new(client_id: 'id', client_secret: 'secret')
+```
 
 Get users by IDs:
 
-    >> client.users.show_batch(user_ids: '1,2')
+``` ruby
+>> client.users.show_batch(user_ids: '1,2')
+```
 
 Implemented API endpoints:
 
-  - `comments.by_video`
-  - `comments.hot.by_video`
-  - `comments.show_batch`
-  - `comments.show`
-  - `searches.video.by_keyword`
-  - `users.friendship.followers`
-  - `users.friendship.followings`
-  - `users.show_batch`
-  - `users.show`
-  - `videos.by_category`
-  - `videos.by_related`
-  - `videos.by_user`
-  - `videos.favorite.by_user`
-  - `videos.show_basic_batch`
-  - `videos.show_basic`
-  - `videos.show_batch`
-  - `videos.show`
+- `comments.by_video`
+- `comments.show`
+- `comments.show_batch`
+- `comments.hot.by_video`
+- `searches.video.by_keyword`
+- `users.show_batch`
+- `users.show`
+- `users.friendship.followers`
+- `users.friendship.followings`
+- `videos.show_basic`
+- `videos.show_basic_batch`
+- `videos.show`
+- `videos.show_batch`
+- `videos.by_user`
+- `videos.by_related`
+- `videos.by_category`
+- `videos.favorite.by_user`
+- `schemas.video.category`
 
 ### Contributions and Pull Requests
 
-No request is too small and I encourage everyone to get involved. So
-please if you would like to contribute, let me know and throw me a pull request!
+No request is too small and I encourage everyone to get involved. So please if
+you would like to contribute, let me know and throw me a pull request!
 
 ### Requirements
 
